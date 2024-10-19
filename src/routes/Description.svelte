@@ -3,7 +3,7 @@
 
 	export let description: Description;
 	const parseMarkdownLinks = (data: string) => {
-		const markdownLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g;
+		const markdownLinkRegex = /\[(.+)]\((.+)\)/g;
 		return data.replace(markdownLinkRegex, '<a href="$2" class="markdown-link">$1</a>');
 	};
 </script>
