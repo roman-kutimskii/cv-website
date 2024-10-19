@@ -2,17 +2,21 @@
 	import type { Description } from '$lib/data';
 
 	export let description: Description;
+	const parseMarkdownLinks = (data: string) => {
+		const markdownLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g;
+		return data.replace(markdownLinkRegex, '<a href="$2" class="markdown-link">$1</a>');
+	};
 </script>
 
 {#if Array.isArray(description)}
 	{#each description as desc}
-		<p>{@html desc}</p>
+		<p>{@html parseMarkdownLinks(desc)}</p>
 	{/each}
 {:else}
 	{#each Object.entries(description) as [key, descs]}
 		<p class="title">{key}:</p>
 		{#each descs as desc}
-			<p>{@html desc}</p>
+			<p>{@html parseMarkdownLinks(desc)}</p>
 		{/each}
 	{/each}
 {/if}
@@ -30,7 +34,7 @@
 		font-size: 16px;
 	}
 
-	:global(a) {
+	:global(.markdown-link) {
 		color: #ffffff;
 	}
 </style>

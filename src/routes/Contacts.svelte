@@ -27,10 +27,6 @@
 			sans-serif;
 	}
 
-	ul {
-		list-style-type: none;
-	}
-
 	.link {
 		font:
 			normal 400 15px/1 Roboto,
@@ -38,7 +34,6 @@
 	}
 
 	.link a {
-		text-decoration: none;
 		color: #ffffff;
 	}
 

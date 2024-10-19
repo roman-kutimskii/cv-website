@@ -62,7 +62,7 @@ export const data: Data = {
 				'Верстал интерфейсы приложения на React по готовым макетам.',
 				'Использовал библиотеку Playwright и работу с API для автоматизации регистрации новых аккаунтов. Автоматизация позволила сэкономить мое время и увеличить количество готовых аккаунтов за единицу времени.',
 				'Разработал систему, состоящую из нескольких сервисов, обеспечивающих совместную работу и интеграцию на заказ.',
-				'Участвовал в разработке open source проекта <a href="https://github.com/rawr111/trademanager-open-source">trademanager-open-source</a>.'
+				'Участвовал в разработке open source проекта [trademanager-open-source](https://github.com/rawr111/trademanager-open-source).'
 			]
 		}
 	],
@@ -74,8 +74,8 @@ export const data: Data = {
 			startDate: 'Сентябрь 2022',
 			endDate: 'Настоящее время',
 			description: [
-				'Разработка системы управления магазином чая: <a href="https://github.com/roman-kutimskii/tea-market">tea-market</a>. Проект включал создание полноценного приложения с использованием React, NestJS, PostgreSQL и др.',
-				'Разработка приложения для просмотра расписания вуза: <a href="https://gitlab.fcd.su/fcdapps/volga-app">volga-app</a>. Помогал в разработке некоторого функционала на Svelte и BeerCSS, проводил code review и участвовал в продвижении проекта.'
+				'Разработка системы управления магазином чая: [tea-market](https://github.com/roman-kutimskii/tea-market). Проект включал создание полноценного приложения с использованием React, NestJS, PostgreSQL и др.',
+				'Разработка приложения для просмотра расписания вуза: [volga-app](https://gitlab.fcd.su/fcdapps/volga-app). Помогал в разработке некоторого функционала на Svelte и BeerCSS, проводил code review и участвовал в продвижении проекта.'
 			]
 		}
 	],
