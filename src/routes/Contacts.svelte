@@ -6,13 +6,47 @@
 </script>
 
 <section>
-	<h2>contact</h2>
+	<div class="header">{wrap('contacts')}</div>
 	<ul>
 		{#each contacts as item}
-			<li>
-				<a href={item.link}>{item.name}</a>
+			<li class="link">
+				<span class="link__tag">&lt;a href="</span><a href={item.link}>{item.link}</a><span
+					class="link__tag">"&gt;</span
+				><span class="link__name">{item.name}</span><span class="link__tag">&lt;/a&gt;</span>
 			</li>
 		{/each}
 	</ul>
-	<div>{wrap('/contact')}</div>
+	<div class="header">{wrap('/contact')}</div>
 </section>
+
+<style>
+	:global(.header) {
+		color: #0094ff;
+		font:
+			normal 400 24px/1 Roboto,
+			sans-serif;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	.link {
+		font:
+			normal 400 15px/1 Roboto,
+			sans-serif;
+	}
+
+	.link a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	.link__tag {
+		color: #696969;
+	}
+
+	.link__name {
+		color: #3dffdb;
+	}
+</style>

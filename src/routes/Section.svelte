@@ -8,16 +8,25 @@
 </script>
 
 <section>
-	<h2>{wrap(title)}</h2>
+	<div class="header">{wrap(title)}</div>
 	<ul>
 		{#each items as item}
 			<li>
-				<strong
-					>{item.position} | {item.name}, {item.city} ({item.startDate} - {item.endDate})</strong
-				>
+				<div class="title">
+					{item.position} | {item.name}, {item.city} ({item.startDate} - {item.endDate})
+				</div>
 				<Description description={item.description} />
 			</li>
 		{/each}
 	</ul>
-	<div>{wrap(`/${title}`)}</div>
+	<div class="header">{wrap(`/${title}`)}</div>
 </section>
+
+<style>
+	.title {
+		color: #3dffdb;
+		font:
+			normal 400 15px/1 Roboto,
+			sans-serif;
+	}
+</style>
